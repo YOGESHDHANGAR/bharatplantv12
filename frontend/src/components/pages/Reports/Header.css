@@ -1,0 +1,29 @@
+.reports_header_container {
+  display: flex;
+  background-color: rgb(135, 167, 216);
+  color: white;
+  font-weight: 100;
+  position: sticky;
+  top: 0;
+  padding-left: 10px;
+}
+
+.reports_header_count_lable {
+  flex: 0.15;
+}
+
+.reports_header_sale_date_lable {
+  flex: 0.2;
+}
+
+.reports_header_customer_name_lable {
+  flex: 0.5;
+}
+
+.reports_header_sale_total_amount_lable {
+  flex: 0.2;
+}
+
+.reports_header_checkbox {
+  flex: 0.1;
+}

@@ -1,0 +1,18 @@
+{
+  "appId": "bharatplantv4",
+  "productName": "bharatplantv4",
+  "files": [
+    "backend/frontend/build/**/*",
+    "backend/**/*",
+    "main.js",
+    "index.js",
+    "node_modules/**/*"
+  ],
+  "directories": {
+    "buildResources": "assets"
+  },
+  "win": {
+    "target": ["msi"],
+    "icon": "assets/icons/bharatplantv4.ico"
+  }
+}

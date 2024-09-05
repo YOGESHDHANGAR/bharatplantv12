@@ -1,0 +1,54 @@
+import React from "react";
+import { Box, Divider, Typography } from "@mui/material";
+import { MRT_TablePagination } from "material-react-table";
+import { formatCurrency } from "../../../utils/formatCurrency/formatCurrency";
+
+const CommonTableFooter = ({
+  table,
+  preVoucherTotalText,
+  totalRecords,
+  vouchersTotal,
+  vouchersTotalColor,
+}) => {
+  return (
+    <Box>
+      <Divider />
+      <Box
+        display="flex"
+        sx={{
+          px: 2,
+          width: "100%",
+        }}
+      >
+        <Typography
+          variant="caption"
+          sx={{
+            fontSize: "1.2rem",
+            textAlign: "center",
+            width: "100%",
+            color: `${vouchersTotalColor}`,
+          }}
+        >
+          {preVoucherTotalText}: {formatCurrency(vouchersTotal)}
+        </Typography>
+      </Box>
+      <Divider />
+      <Box
+        display="flex"
+        justifyContent="space-between"
+        alignItems="center"
+        sx={{ height: "50px", px: 2 }}
+      >
+        <Box>
+          <Typography variant="caption" sx={{ fontSize: "inherit" }}>
+            Total Records: {totalRecords}
+          </Typography>
+        </Box>
+
+        <MRT_TablePagination table={table} />
+      </Box>
+    </Box>
+  );
+};
+
+export default CommonTableFooter;

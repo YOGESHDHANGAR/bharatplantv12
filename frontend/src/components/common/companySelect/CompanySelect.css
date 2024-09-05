@@ -1,0 +1,7 @@
+.company_name {
+  width: "inherit";
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  /* font-weight: bold; */
+}
